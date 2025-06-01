@@ -33,7 +33,7 @@ background-color: #aaebf81f;
   padding-top: 4rem;
   border:none;
   border-radius: 1rem;
-  background-image: url(images/services/service-pattern.png);
+  background-image: url(../../../assets/images/services/service-pattern.png);
   background-repeat: no-repeat;
   transition: all 1s ease-out;
    
@@ -60,7 +60,7 @@ background-color: white;
 }
 
 .icon-one{
-  background-image:url(images/services/icon-1.png);
+  background-image:url(../../../assets/images/services/icon-1.png);
   height:2rem;
   width:2rem;
   background-repeat: no-repeat;

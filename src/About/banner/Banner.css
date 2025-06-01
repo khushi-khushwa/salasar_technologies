@@ -7,7 +7,7 @@
 .about-company .about-company-video{
  
   position: relative;
-  background: url(images/about/video.jpg) ;
+  background: url(../../assets/images/about/video.jpg) ;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center top;
@@ -18,7 +18,7 @@
 .contact-banner , .about-section, .service-page-section{
   
   margin-top:6rem;
-  background-image: url(images/contact/img-5.jpg);
+  background-image: url(../../assets/images/contact/img-5.jpg);
  
   position: relative;
   z-index: 1;
