@@ -1,0 +1,63 @@
+img {
+  max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.navbar-toggler i{
+  color:#0aadee35;
+  font-size: 2rem;
+}
+.offcanvas-body{
+  background-color: #04063c;
+}
+.navbar-brand img {
+  height:5rem;
+  width:full;
+}
+/* .offcanvas-header{
+  background-color: rgb(231, 74, 147);
+} */
+
+  /* navbar */
+
+   .nav-light{
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    background-color: #04063c !important;
+    z-index: 9999;
+}
+ .offcanvas-body .navbar-nav .nav-item .nav-link{
+  font-size:1.2rem;
+ }
+  
+  .others-option a{
+    text-decoration: none;
+
+
+  }
+ .others-option i {
+      color:white;
+      margin:0 5px;
+    
+  }
+ .others-option .default-btn{
+
+  
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 18px 35px;
+  line-height: 1;
+    
+ 
+ 
+
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #1dd3f8;
+  padding: 15px 32px;
+  }

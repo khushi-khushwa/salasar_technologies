@@ -1,0 +1,141 @@
+
+/* work section */
+.work-section{
+  position:relative;
+  margin-top:2rem;
+  /* background-image: url(images/work/project__bg__02.png); */
+  padding-bottom:7rem;
+  padding-top: 3rem;
+ }
+ .work-heading h2{
+  color:#2A4DFE;
+ 
+  
+ }
+
+.work-heading{
+  padding-bottom: 12rem;
+  
+}
+ .work-box{
+  background-color: white;
+position: relative;
+
+ }
+ .svg-back-icon{
+  position:relative;
+ }
+ .svg-back-icon img{
+  height:4.5rem;
+   width:5rem;
+  visibility: hidden;
+ }
+
+
+ .first-box{
+  padding-top: 4rem;
+  position:relative;
+ }
+ 
+ .num-count{
+  position: absolute;
+  left:0.4rem;
+  top:2.8rem;
+  z-index:2;
+  color:white;
+  font-size:1.5rem;
+  width:3rem;
+  height:3rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color: rgb(48, 136, 236);
+  border:none;
+  border-radius:50%;
+ 
+ }
+ .back-round{
+  position: absolute;
+  left:-1.1rem;
+  top:1.4rem;
+  z-index:2;
+  font-size:2rem;
+  width:6rem;
+  height:6rem;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(128, 176, 240, 0.5);
+  border:none;
+  border-radius:50%;
+  animation: spulse 5s   infinite ;
+ }
+ @keyframes spulse {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.svg-back-icon svg{
+  position:absolute;
+  left:1rem;
+  top:1rem;
+  fill:#384BFF;
+
+ }
+.round-num{
+  position: absolute;
+  left:-0.6rem;
+  top:1.8rem;
+  width:5rem;
+  height:5rem;
+  z-index:2;
+  background-color: rgba(167, 199, 240, 0.5);
+  border:none;
+  border-radius:50%;
+  animation: pulse 2s   infinite alternate;
+}
+
+ @keyframes pulse {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rounded-num{
+  background-color: #1dd3f8;
+}
+
+.full-box h3{
+  font-size:1rem;
+  color:#1dd3f8;
+  height:5rem;
+  width:5rem;
+  border:none;
+  border-radius:50%;
+}
+
+@media (max-width:770px){
+ .svg-back-icon svg{
+  position:absolute;
+  left:1rem;
+  top:1rem;
+  height:50px;
+  width:50px;
+  fill:white;
+ }
+  .svg-back-icon img{
+    height:4.5rem;
+     width:5rem;
+     visibility:visible;
+   }
+   .round-animate{
+    display: none;
+   } 
+
+}

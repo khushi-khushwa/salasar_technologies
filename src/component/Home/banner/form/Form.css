@@ -1,0 +1,124 @@
+/* contact */
+.row-gap{
+  
+  border: 3px dashed rgb(161, 67, 216);
+  background-color: #f6fcff;
+  padding-top: 4rem ;
+  border-radius:1rem;
+  width:auto;
+  margin: 0 5rem;
+  /* padding-left:7rem;
+  padding-right:7rem; */
+}
+.contact-section{
+  margin-top:3rem;
+  position: relative;
+  top:10rem;
+overflow: hidden;
+}
+
+
+
+.contact-section .upper-input input{
+ width:16rem;
+  height:2.8rem;
+  border:none;
+ margin: 0.4rem;
+}
+
+.contact-section .bottom-input input{
+ width:16rem;
+  height:2.8rem;
+  border:none;
+ margin: 0.4rem;
+}
+.contact-section input[type="text"]{
+  padding-left: 1rem;
+}
+
+.contact-section .message-wrap{
+  padding-left: 0.5rem;;
+}
+ .contact-section .message-wrap textarea{
+  border:none;
+  width:32.5rem;
+  
+}
+
+.contact-section textarea[name="message"]{
+  padding-left: 1rem;;
+}
+
+@media (max-width :1400px){
+  .contact-section .row-gap{
+    margin: 0 0rem;
+  }
+}
+
+@media (max-width:767px){
+  .contact-section .message-wrap textarea{
+  border:none;
+  width:23.5rem;
+  
+}
+.contact-section .upper-input input{
+ width:23.5rem;
+  
+}
+.contact-section .bottom-input input{
+ width:23.5rem;
+  
+}
+}
+@media (max-width:432px){
+ .contact-section  .message-wrap textarea{
+  border:none;
+  width:19.5rem;
+  
+}
+
+.contact-section .upper-input input{
+ width:19.5rem;
+  
+}
+.contact-section .bottom-input input{
+ width:19.5rem;
+  
+}
+}
+
+
+.contact-section .form-contact  button {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 15px 43px 19px 44px;
+border:none;
+ 
+  background-image: linear-gradient(to right, #7526d7 0%, #f269fd 50%, #7526d7 100%);
+}
+
+.contact-section .form-contact .fl-btn .btn-contact {
+  font-size: 17px;
+  font-weight: 700;
+  padding: 15px 43px 19px 44px;
+  
+}
+.contact-section .linear-color-one .hv-linear {
+  background-image: linear-gradient(to right, #0e28b8 0%, #403ea1 50%, #3e25aa 100%);
+}
+.contact-section .border-corner {
+  border-radius: 36px;
+}
+.contact-section .btn-linear .hv-linear {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: capitalize;
+  height:3rem;
+  width:10rem;
+  border:none;
+  margin-top:2rem;
+ 
+ 
+}
