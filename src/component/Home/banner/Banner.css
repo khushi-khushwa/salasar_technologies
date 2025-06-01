@@ -125,7 +125,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(images/banner/whitestar.png);
+    background-image: url(../../../assets/images/banner/whitestar.png);
     animation: focus-one 1s linear 1s infinite;
     z-index: -1;
   }
