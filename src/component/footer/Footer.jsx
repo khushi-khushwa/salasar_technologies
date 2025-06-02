@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom'
 const Footer = () => {
 
   const location = useLocation();
-  const isContactpage = location.pathname === '/home'
+  const isContactpage = location.pathname === '/'
  const contacts = [
     {head:'Call Us Now', text:'+040 888 6666', icon:'fa-solid fa-phone'},
         {head:'Email Address', text:'abc@gmial.com', icon:'fa-regular fa-envelope'},
