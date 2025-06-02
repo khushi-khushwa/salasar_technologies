@@ -8,7 +8,7 @@ const Footer = () => {
  const contacts = [
     {head:'Call Us Now', text:'+040 888 6666', icon:'fa-solid fa-phone'},
         {head:'Email Address', text:'abc@gmial.com', icon:'fa-regular fa-envelope'},
-            {head:'Address', text:'204 Protector Here, USA', icon:'fa-solid fa-location-dot'},
+            // {head:'Address', text:'204 Protector Here, USA', icon:'fa-solid fa-location-dot'},
   ]
 
   return (
@@ -52,7 +52,7 @@ const Footer = () => {
                 <li><a href="#">CRM</a></li>
                 <li><a href="#">Graphic Design</a></li>
                 <li><a href="#">SEO & SEM</a></li>
-                <li><a href="#">Cyber security</a></li>
+                <li><a href="#">Video Editing</a></li>
               </ul>
             </div>
 
@@ -85,7 +85,7 @@ const Footer = () => {
             <div className="contact-title ">
               <h3>Contact</h3>
               <div className=""
-               style={{height:'0.1rem' , width: '10rem' ,  backgroundColor: '#1dd3f8' , marginBottom: '1.4rem'}}></div>
+               style={{height:'2px' , width: '10rem' ,  backgroundColor: '#1dd3f8' , marginBottom: '2.4rem'}}></div>
             </div>
             <div className="fw-link  ">
                <ul>

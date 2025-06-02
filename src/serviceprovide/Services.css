@@ -56,6 +56,10 @@ z-index:2;
 
 }
 
+.givelineheight{
+  line-height:1.5rem;
+}
+
 .contact-banner-info h1{
   font-size: 4rem;
 }
@@ -85,6 +89,8 @@ z-index:-1;
 .services-offer{
   position:relative;
   margin-top:2rem;
+  margin-bottom:2rem;
+  padding-bottom: 5rem;
 }
 
 .services-offer .section-title span{
@@ -135,6 +141,24 @@ z-index:-1;
   border-top-left-radius: 0rem;
   margin: 1rem 0;
 }
+
+.Info {
+    /* position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); */
+    opacity: 0;
+}
+
+.Info.Show {
+    opacity: 1;
+}
+
 
 @media (1200px <= width <= 1400px ){
   
