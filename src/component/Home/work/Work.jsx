@@ -87,9 +87,7 @@ const Work = () => {
             
       
       <div className="row ">
-        {/* <!-- <h2>How It Works</h2>
-            <p className="text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit.Sed quis accumonsn nisit ut ut feils congue nisl
-              henderit commando.</p> --> */}
+     
           
         <div
           className="col-md-6 col-sm-12 col-lg-3 col-xl-3 d-flex flex-column justify-content-center align-items-center first-box">

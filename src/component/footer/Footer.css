@@ -52,7 +52,7 @@
   color:white;
 }
 .footer-list  .fw-link li {
-  
+  z-index:10000;
   list-style:none;
   color:#ffffff;
   font-size:15px;

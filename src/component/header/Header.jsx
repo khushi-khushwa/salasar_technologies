@@ -6,12 +6,7 @@ import './Header.css'
 import Banner from '../Home/banner/Banner';
 {/* <img src={logo} alt="Logo" /> */}
 export const Header = () => {
-  // const header = [
-  //   { name: "Home", link: "index.html" },
-  //   { name: "About", link: "about.html" },
-  //   { name: "Services", link: "services.html" },
-  //   { name: "Contact", link: "contact.html" }
-  // ];
+
 
 
   const navItems = [

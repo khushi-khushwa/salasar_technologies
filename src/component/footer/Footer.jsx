@@ -1,16 +1,19 @@
 import React from 'react'
 import './Footer.css'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 const Footer = () => {
 
   const location = useLocation();
-  const isContactpage = location.pathname === '/'
+  const isContactpage = location.pathname === '/' || '/home'
  const contacts = [
     {head:'Call Us Now', text:'+040 888 6666', icon:'fa-solid fa-phone'},
         {head:'Email Address', text:'abc@gmial.com', icon:'fa-regular fa-envelope'},
             // {head:'Address', text:'204 Protector Here, USA', icon:'fa-solid fa-location-dot'},
   ]
 
+  function ads(){
+     console.log("Clicked");
+  }
   return (
  <>
    {/* <!-- FOOTER --> */}
@@ -66,16 +69,18 @@ const Footer = () => {
               <div className=" "
                  style={{height:'0.1rem' , width: '9rem' ,  backgroundColor: '#1dd3f8' , marginBottom: '1.4rem'}}></div>
             </div>
-            <div className="fw-link ">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Terms of Service</a></li>
-               
-              </ul>
-            </div>
+       <div className="fw-link">
+      <ul>
+        <li>
+          <Link to="/home" onClick={() => console.log("Navigating to Home")}>
+            Home
+          </Link>
+        </li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+      </ul>
+    </div>
           </div>
         </div>
 
