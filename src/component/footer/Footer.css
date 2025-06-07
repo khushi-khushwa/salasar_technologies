@@ -140,10 +140,10 @@ color:white;
 
  .hr-line{
   border:1.7px solid white;
-  width:95%;
+  /* width:95%;
   height:0.rem;
-  z-index:1;
-  margin-top:1.5rem;
+  z-index:1; */
+  margin-top:2rem;
   margin-bottom:2rem;
  }
 
