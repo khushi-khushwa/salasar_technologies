@@ -18,34 +18,7 @@ const Services = () => {
 
     <img src="images/services/1.png" alt="box-img" className="bottom-img" />
     <img src="images/services/2.png" alt="box-img" className="upper-img" />
-{/* <div className="services-section">
-  <img src="images/services/1.png" alt="box-img" className="bottom-img" />
-  <img src="images/services/2.png" alt="box-img" className="upper-img" />
 
-  <div className="container">
-    <h1 className="text-center mb-5"> Our Core Services</h1>
-    <div className="row gy-5 gx-5 px-5 pt-5">
-      {
-        services.map((item, index) => (
-          <div key={index} className="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-            <div className="shadow px-4 services-info">
-              <div className="icon-one"></div>
-              <div className="icon-two" style={{ backgroundImage: 'url(images/services/icon-2.png)' }}></div>
-              <div className="icon-three" style={{ backgroundImage: 'url(images/services/icon-4.png)' }}></div>
-              <div className="icon-four" style={{ backgroundImage: 'url(images/services/icon-19.png)' }}></div>
-
-              <img className='pb-2' src={item.src} style={{ width: '5rem' }} />
-
-              <h5>{item.name}</h5>
-              <p className="text-center">{item.text}</p>
-              <a href="#" className="btn-hover"><i className="fa-solid fa-greater-than"></i></a>
-            </div>
-          </div>
-        ))
-      }
-    </div>
-  </div>
-</div> */}
 
     <div className="container">
       <h1 className="text-center mb-5"> Our Core Services</h1>

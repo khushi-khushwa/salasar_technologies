@@ -43,6 +43,8 @@
 } */
 
 }
+
+
 .testimonial-heading p{
  text-align: justify;
 }
@@ -176,4 +178,11 @@
     left: 16rem;
     z-index: -2;
 
+}
+
+@media (max-width :992px ){
+  .shape-bottom, .shape-top{
+    display: none;
+  }
+  
 }

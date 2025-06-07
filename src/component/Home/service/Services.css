@@ -70,8 +70,30 @@ background-color: white;
   left:4rem; 
   visibility: hidden;
   opacity:0.3;
-  animation: animationFramesOne 25s infinite linear;
+  animation: animationFramesTwo 25s infinite linear;
 }
+
+@keyframes animationFramesTwo {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    transform: translate(100px, 72px) rotate(72deg);
+  }
+ 60% {
+    transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    transform: translate(0px, 72px) rotate(144deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+}
+
 
 .icon-two{
   height:2rem;
@@ -82,7 +104,28 @@ background-color: white;
   top:4rem;
   right:4rem; 
   opacity:0.3;
-  animation: animationFramesOne 25s infinite linear;
+  animation: animationFramesFour 25s infinite linear;
+}
+
+@keyframes animationFramesFour {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(20px, -1px) rotate(36deg);
+  }
+  40% {
+    transform: translate(-60px, 72px) rotate(72deg);
+  }
+ 60% {
+    transform: translate(-90px, 122px) rotate(108deg);
+  }
+  80% {
+    transform: translate(0px, 72px) rotate(144deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
 }
 
 .icon-three{
@@ -94,7 +137,28 @@ background-color: white;
   top:6rem;
   right:2rem; 
   opacity:0.3;
-  animation: animationFramesOne 25s infinite linear;
+  animation: animationFramesThree 25s infinite linear;
+}
+
+@keyframes animationFramesThree {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(20px, -1px) rotate(36deg);
+  }
+  40% {
+    transform: translate(-60px, 72px) rotate(72deg);
+  }
+ 60% {
+    transform: translate(-90px, 122px) rotate(108deg);
+  }
+  80% {
+    transform: translate(0px, 72px) rotate(144deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
 }
 .icon-four{
   height:2rem;
@@ -106,6 +170,27 @@ background-color: white;
   left:2rem; 
   opacity:0.5;
   animation: animationFramesOne 25s infinite linear;
+}
+
+@keyframes animationFramesOne {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(73px, -1px) rotate(36deg);
+  }
+  40% {
+    transform: translate(100px, 72px) rotate(72deg);
+  }
+ 60% {
+    transform: translate(83px, 122px) rotate(108deg);
+  }
+  80% {
+    transform: translate(0px, 72px) rotate(144deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
 }
 .services-info:hover .icon-one{
 
