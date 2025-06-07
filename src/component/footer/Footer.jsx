@@ -4,7 +4,8 @@ import { Link, useLocation } from 'react-router-dom'
 const Footer = () => {
 
   const location = useLocation();
-  const isContactpage = location.pathname === '/' || '/home'
+ const isContactpage = location.pathname === '/' || location.pathname === '/home';
+
  const contacts = [
     {head:'Call Us Now', text:'+040 888 6666', icon:'fa-solid fa-phone'},
         {head:'Email Address', text:'abc@gmial.com', icon:'fa-regular fa-envelope'},
@@ -19,7 +20,7 @@ const Footer = () => {
    {/* <!-- FOOTER --> */}
   <footer className="footer">
     <div className="container">
-      <div className={`row d-flex  footer ${isContactpage ? 'main-footer':''}`} >
+      <div className={`row d-flex  footer ${isContactpage ? 'main-footer':'my-footer'}`} >
         <div className="col-lg-3  col-sm-6 col-md-6">
           <img src="./images/logo/salasar-logo.png" />
 
@@ -38,7 +39,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="col-lg-3 col-sm-6 d-flex justify-content-center align-items-center footer-ul">
+        <div className="col-lg-3 col-sm-6  footer-ul">
 
           <div className="footer-list footer-university ">
             <div className="service-title ">
@@ -62,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-lg-3 col-sm-6  d-flex justify-content-center align-items-center footer-ul">
+        <div className="col-lg-3 col-sm-6   footer-ul">
           <div className="footer-list footer-link  ">
             <div className="fw-title  ">
               <h3 className="">Links</h3>
@@ -84,7 +85,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="col-lg-3 col-sm-6 footer-ul d-flex justify-content-center align-items-center">
+        <div className="col-lg-3 col-sm-6 footer-ul ">
 
           <div className="footer-list footer-contact">
             <div className="contact-title ">
