@@ -17,7 +17,7 @@
   padding-top:12rem;
 }
 .my-footer{
-  padding-top:3rem;
+  padding-top:2rem;
 }
 
 .footer-list .fw-title {
@@ -125,7 +125,9 @@ color:white;
     font-weight:bold;
 }
 
-
+ .footer-ul{
+  margin-top: 2rem;
+ }
 
 
 .footer .first-p{
@@ -214,4 +216,20 @@ color:white;
     margin-top:3rem;
   }
 }
+
+@media(max-width:575px){
+ .footer-ul{
+  margin-top: 0rem;
+ }
+ .my-footer{
+  margin-top: 3rem;
+ }
+ .follow-icon{
+
+   margin-bottom: 3rem;
+ }
+}
+
+ 
+
 

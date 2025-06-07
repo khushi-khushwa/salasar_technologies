@@ -26,7 +26,9 @@ const Footer = () => {
 
           <p className="mt-3 mb-3 first-p" style={{color: 'white'}}>Salasar Technologies is a versatile IT company that specializes in providing
              a wide range of communication and information technology solutions.</p>
-          <div>
+         
+            <div className='follow-icon'>
+
             <p className="text-white">Follow Us</p>
             <div className="d-flex media-icon">
               <a><i className="fa-brands fa-twitter"></i></a>
@@ -34,6 +36,7 @@ const Footer = () => {
               <a><i className="fa-brands fa-facebook"></i></a>
               <a><i className="fa-brands fa-linkedin"></i></a>
             </div>
+          
 
           </div>
         </div>
