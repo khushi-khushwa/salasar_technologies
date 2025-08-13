@@ -18,33 +18,33 @@ const Testimonial = () => {
 
   const testimonials = [
     {
-      img: 'images/testimonial/client-1.jpg',
-      name: 'Jhon',
-      company: 'BizBite',
+      img: 'vmirf.png',
+      name: 'Ajay',
+      company: 'VIE Medical Institute and Research Foundation ',
       message:
-        'Interactively optimize fully researched expertise vis-a-vis plug-and-play relationships. Intrinsicly develop viral core competencies for fully tested customer service.',
+        'Salasar has been our go-to partner for creative design. They have designed our posts, certificates, and provided top-notch editing services — always exceeding expectations.',
     },
     {
-      img: 'images/testimonial/client-2.jpg',
-      name: 'Jhon',
-      company: 'BizBite',
+      img: 'mom.jpg',
+      name: 'MomHomes',
+      company: 'MomHomes',
       message:
-        'Rapidiously develop user-friendly growth strategies after extensive initiatives. Conveniently grow innovative benefits through fully tested deliverables whereas tactical functionalities.',
+        'Salasar transformed our vision into a stunning online presence. The MomHomes interior website they built not only looks beautiful but also perfectly reflects our brand’s elegance and creativity.',
     },
-    {
-      img: 'images/testimonial/client-3.jpg',
-      name: 'Jhon',
-      company: 'BizBite',
-      message:
-        'Objectively synthesize client-centered e-tailers for maintainable channels. Holisticly administrate customer directed vortals whereas tactical functionalities.',
-    },
-    {
-      img: 'images/testimonial/client-4.jpg',
-      name: 'Jhon',
-      company: 'BizBite',
-      message:
-        'Enthusiastically innovate B2C data without clicks-and-mortar convergence. Monotonectally deliver compelling testing procedures vis-a-vis B2B testing procedures.',
-    },
+    // {
+    //   img: 'images/testimonial/client-3.jpg',
+    //   name: 'Jhon',
+    //   company: 'BizBite',
+    //   message:
+    //     'Objectively synthesize client-centered e-tailers for maintainable channels. Holisticly administrate customer directed vortals whereas tactical functionalities.',
+    // },
+    // {
+    //   img: 'images/testimonial/client-4.jpg',
+    //   name: 'Jhon',
+    //   company: 'BizBite',
+    //   message:
+    //     'Enthusiastically innovate B2C data without clicks-and-mortar convergence. Monotonectally deliver compelling testing procedures vis-a-vis B2B testing procedures.',
+    // },
   ];
 
   return (
@@ -78,13 +78,18 @@ const Testimonial = () => {
                         <div className="author-img mr-3">
                           <img src={testimonial.img} alt="client" />
                         </div>
-                        <div className="media-body text-white">
-                          <h5 className="mb-0 text-white fs-4">{testimonial.name}</h5>
-                          <span>{testimonial.company}</span>
-                        </div>
+                        {/* <div className="media-body ">
+                          <h5 className="mb-0 text-white fs-4">{testimonial.name}</h5> */}
+                          
+                        {/* </div> */}
+
                         <span className="fas f-aquote-right icon-md text-white"></span>
                       </div>
-                      <div className="client-say text-white mt-5 lh-lg">
+                      <div style={{marginTop:'2rem'}}>
+
+                      <h5 className=" text-white fs-4">{testimonial.company}</h5>
+                      </div>
+                      <div className="client-say text-white mt-2 lh-lg">
                         <p>{testimonial.message}</p>
                       </div>
                     </div>

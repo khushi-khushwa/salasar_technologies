@@ -1,11 +1,12 @@
 import React from 'react'
 import './Services.css'
+import { Link } from 'react-router-dom'
 const Services = () => {
 
      const services=[
         {name:'Custom Software Development', src:"images/services/service1.png" , text:'Tailored solutions that fit your business like a glove.'},
         {name:' Graphic Design', src:"images/services/service2.png",  text:'Creative, brand-driven visuals for web, print, and digital platforms.'},
-        {name:'IT Consulting & Strategy', src:"images/services/service3.png", text:'Smart tech consulting to future-proof your digital roadmap.'},
+        {name:'Search Engineer Optimization', src:"images/services/service3.png", text:'Drive traffic and rank higher on Google with powerful SEO.'},
         {name:'UI/UX Design', src:"images/services/service4.png", text:'Designs that are intuitive, interactive, and user-focused.'},
         {name:'Web Application Development', src:"images/services/service5.png", text:'Designs that are intuitive, interactive, and user-focused.'},
         {name:'Video Editing', src:"images/services/service6.png", text:'High-impact video editing for engaging, polished, and professional content.'},
@@ -38,7 +39,7 @@ const Services = () => {
 
             <h5>{item.name}</h5>
             <p className="text-center ">{item.text}</p>
-            <a href="" className="btn-hover"><i className="fa-solid fa-greater-than"></i></a>
+            <Link to="/services" className="btn-hover"><i className="fa-solid fa-greater-than"></i></Link>
           </div>
         </div> 
             ))

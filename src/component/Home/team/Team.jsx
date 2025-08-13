@@ -3,10 +3,10 @@ import './Team.css'
 const Team = () => {
 
     const  team = [
-        {name:'Kene Alex Piter', profession:'Executive' , image:'images/our team/1 (1).png'},
-         {name:'Alisa Maria', profession:'Developer' , image:'images/our team/2.png'},
-          {name:'Karen Peter', profession:'CEO' , image:'images/our team/3.png'},
-           {name:'Peter Jack', profession:'UI/UX Designer' , image:'images/our team/4.png'},
+        {name:'Jatin Bairwa', profession:'Digital/SEO Expert' , image:'images/our team/1 (1).png'},
+         {name:'Arsh', profession:'UI/UX Designer' , image:'images/our team/2.png'},
+          {name:'Khushi', profession:'Frontend Developer' , image:'images/our team/3.png'},
+           {name:'Vikrant', profession:'Backend Developer' , image:'images/our team/4.png'},
      ]
 
   return (
@@ -15,9 +15,9 @@ const Team = () => {
 <section className="team-area ">
   <div className="container">
     <div className="section-title home-four-section-title text-white pt-5">
-      <span>Team</span>
+      {/* <span>Team</span> */}
       <h2 className="text-white">Meet Our Expert Team</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eos ea obcaecati et similique incidunt animi, sed, quos officiis placeat. Id ipsa molestias.</p>
+      <p>With diverse skills and a shared passion for excellence, we work together to create solutions that help our clients grow and succeed.</p>
     </div>
     <div className="row">
         {

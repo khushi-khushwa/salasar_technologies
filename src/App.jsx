@@ -9,6 +9,7 @@ import Footer from './component/footer/Footer'
 import About from './About/About'
 import Services from './serviceprovide/Services'
 import Contact from './component/Contact/Contact'
+import Scroll from './Scroll'
 function App() {
 
 
@@ -19,17 +20,14 @@ function App() {
 <BrowserRouter>
 
 <Header/>
-
+<Scroll></Scroll>
 <Routes>
    <Route path='/' element={<Home/>}></Route>
   <Route path='/home' element={<Home/>}></Route>
     <Route path='/about' element={<About/>}/>
       <Route path='/services' element={<Services/>}/>
       <Route path='/contact' element={<Contact/>}/>
-  {/* <Route path='/contact' element={<Contact/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/services' element={<Service/>}/>
-      <Route path='/project' element={<Project/>}/> */}
+ 
 </Routes>
 <Footer></Footer>
 </BrowserRouter>

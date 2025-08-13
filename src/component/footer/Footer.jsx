@@ -7,9 +7,9 @@ const Footer = () => {
  const isContactpage = location.pathname === '/' || location.pathname === '/home';
 
  const contacts = [
-    {head:'Call Us Now', text:'+040 888 6666', icon:'fa-solid fa-phone'},
-        {head:'Email Address', text:'abc@gmial.com', icon:'fa-regular fa-envelope'},
-            // {head:'Address', text:'204 Protector Here, USA', icon:'fa-solid fa-location-dot'},
+    {head:'Call Us Now', text:'+91 7011230208', icon:'fa-solid fa-phone'},
+        {head:'Email Address', text:'khushikhushwah70@gmial.com', icon:'fa-regular fa-envelope'},
+            {head:'Address', text:'Gurgaon Haryana', icon:'fa-solid fa-location-dot'},
   ]
 
   function ads(){
@@ -31,7 +31,7 @@ const Footer = () => {
 
             <p className="text-white">Follow Us</p>
             <div className="d-flex media-icon">
-              <a><i className="fa-brands fa-twitter"></i></a>
+              {/* <a><i className="fa-brands fa-twitter"></i></a> */}
               <a><i className="fa-brands fa-instagram"></i></a>
               <a><i className="fa-brands fa-facebook"></i></a>
               <a><i className="fa-brands fa-linkedin"></i></a>
@@ -56,7 +56,7 @@ const Footer = () => {
                 <li>
                   <a href="#">Web development</a>
                 </li>
-                <li><a href="#">CRM</a></li>
+                <li><a href="#">Mobile Development</a></li>
                 <li><a href="#">Graphic Design</a></li>
                 <li><a href="#">SEO & SEM</a></li>
                 <li><a href="#">Video Editing</a></li>
@@ -94,7 +94,7 @@ const Footer = () => {
             <div className="contact-title ">
               <h3>Contact</h3>
               <div className=""
-               style={{height:'2px' , width: '10rem' ,  backgroundColor: '#1dd3f8' , marginBottom: '2.4rem'}}></div>
+               style={{height:'2px' , width: '10rem' ,  backgroundColor: '#1dd3f8' , marginBottom: '1rem'}}></div>
             </div>
             <div className="fw-link  ">
                <ul>
@@ -102,7 +102,7 @@ const Footer = () => {
                 contacts.map((item, i) =>(
 
                 <li key={i}>
-                  <div className="d-flex ">
+                  <div className="d-flex mt-0">
                     <div className=" me-3 footer-icon mt-3 ">
                       <i className={item.icon}></i>
                     </div>

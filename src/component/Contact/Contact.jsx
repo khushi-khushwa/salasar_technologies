@@ -1,11 +1,41 @@
-import React from 'react'
+import { useState } from 'react'
+import axios from 'axios';
 import './Contact.css'
 const Contact = () => {
+  const [formvalue, setFormvalue] = useState({
+      name: '',
+      email: '',
+      subject: '',
+      phone: '',
+      textbox: '',
+    });
+  
+     function changevalue(e) {
+        const { name, value } = e.target;
+        setFormvalue((prev) => ({
+          ...prev,
+          [name]: value,
+        }));
+      }
+    
+      async function submitForm(e) {
+        e.preventDefault();
+       console.log(formvalue);
+         try{
+    
+           const res = await axios.post("http://localhost:8080/salasar/contact",formvalue);
+           alert(res.data.message || 'Form submitted successfully!');
+           setFormvalue({ name: '', email: '', subject: '', phone: '', textbox: '' });
+         }catch(error){
+             console.error('Error submitting form:', error);
+          alert('Something went wrong, please try again.');
+         }
+      }
   return (
    <>
     {/* <!-- banner of contact section --> */}
 
-  <div class="contact-banner">
+  <div className="contact-banner">
     <div className="shape-svg">
   <svg id="svg" viewBox="0 0 400 28" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
     <path 
@@ -16,12 +46,12 @@ const Contact = () => {
 </div>
 
    
-    <div class="container-fluid" >
-      <div class="row">
-          <div class="col-md-12">
-            <div class="contact-banner-info">
+    <div className="container-fluid" >
+      <div className="row">
+          <div className="col-md-12">
+            <div className="contact-banner-info">
              
-              <h1 class="text-white">CONTACT US</h1> 
+              <h1 className="text-white">CONTACT US</h1> 
               <p>Feel free to contact with us</p>
 
             </div>
@@ -33,45 +63,46 @@ const Contact = () => {
 
   {/* <!-- banner end --> */}
 
-  <div class="contact-full-info">
-    <div class="container">
-      <div class="row gy-5">
-        <div class="col-md-4 col-sm-12 col-lg-4">
-            <div class="info shadow">
-              {/* <!-- <i class="ti-location-pin"></i> --> */}
-              <div class="contact-icon ">
-              <i class="fa-solid fa-location-dot"></i>
+  <div className="contact-full-info">
+    <div className="container">
+      <div className="row gy-5">
+        <div className="col-md-4 col-sm-12 col-lg-4">
+            <div className="info shadow">
+              {/* <!-- <i className="ti-location-pin"></i> --> */}
+              <div className="contact-icon ">
+              <i className="fa-solid fa-location-dot"></i>
               </div>
               
-              <div class="detail">
+              <div className="detail">
                 <h3>Our Location</h3>
-                <p class="text-center mt-0 ">The Queen's Walk, Bishop's,  United Kingdom</p>
+                <p className="text-center ">Gurgaon Haryana </p>
+                <p className='mt-0'>India</p>
               </div>
              
             </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-lg-4">
-          <div class="info shadow">
-            <div class="contact-icon">
-            <i class="fa-solid fa-headset"></i>
+        <div className="col-md-4 col-sm-12 col-lg-4">
+          <div className="info shadow">
+            <div className="contact-icon">
+            <i className="fa-solid fa-headset"></i>
             </div>
  
-          <div class="contact-detail">
+          <div className="contact-detail">
             <h3>Our Contact</h3>
-            <p>+ (567) 1234-567-8900</p>
-             <p> + (567) 1234-567-8901</p>
+            <p>+91 7011230208</p>
+             <p>+91 9205247324</p>
           </div>
           </div>
         </div>
-        <div class="col-md-4 col-sm-12 col-lg-4">
-          <div class="info shadow">
-            <div class="contact-icon">
-            <i class="fa-regular fa-envelope"></i>
+        <div className="col-md-4 col-sm-12 col-lg-4">
+          <div className="info shadow">
+            <div className="contact-icon">
+            <i className="fa-regular fa-envelope"></i>
             </div>
-            <div class="contact-detail">
+            <div className="contact-detail">
               <h3>Mail Us</h3>
-             <p>info@peacefulthemes.com</p>
-             <p>info2@peacefulthemes.com</p>
+             <p>khushikhushwah70@gmail.com</p>
+             <p>salasartechnologies80@gmail.com</p>
             </div>
           </div>
       
@@ -84,43 +115,48 @@ const Contact = () => {
 {/* <!--  form in contact page 1--> */}
 
 
-<div class="get-touch ">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-lg-12 col-xl-6">
-       <div class="img-in-form d-lg-flex justify-content-center ">
-        <img src="images/contact/contact-img.png" />
+<div className="get-touch ">
+  <div className="container">
+    <div className="row">
+      <div className="col-md-12 col-lg-12 col-xl-6">
+       <div className="img-in-form d-lg-flex justify-content-center ">
+        <img src="contactimage.jpg" />
        </div>
       </div>
 
-      <div class="col-md-12 col-lg-12 col-xl-6">
+      <div className="col-md-12 col-lg-12 col-xl-6">
 
- <div class="contact-form ">
+ <div className="contact-form ">
     <h1>Get in touch</h1>
  
 {/* <!--     
-    <div class="col-lg-8 col-md-12"> --> */}
-      <div class="row row-border">
-        <div class="col-md-12 ">
-          <form class=" get-touch-form">
-            <div class="upper-input mb-3 d-md-flex">
+    <div className="col-lg-8 col-md-12"> --> */}
+      <div className="row row-border">
+        <div className="col-md-12 ">
+          <form className=" get-touch-form" onSubmit={submitForm}>
+            <div className="upper-input mb-3 d-md-flex">
              
-              <input type="text" name="name" id="name" value="" class="name shadow-sm " placeholder="Name:" />
+              <input type="text" name="name" id="name"  value={formvalue.name}
+                      onChange={changevalue}className="name shadow-sm " placeholder="Name:" />
              
-              <input type="text" name="email" id="email" value="" class="email shadow-sm" placeholder="Email:"/>
+              <input type="text" name="email" id="email"  value={formvalue.email}
+                      onChange={changevalue} className="email shadow-sm" placeholder="Email:"/>
             </div>
 
-            <div class="bottom-input mb-3 d-md-flex">
-              <input type="text" name="subject" id="subject" value="" class="subject shadow-sm" placeholder="Subject:"/>
-              <input type="text" name="phone" id="phone" value="" class="phone shadow-sm" placeholder="Phone:"/>
+            <div className="bottom-input mb-3 d-md-flex">
+              <input type="text" name="subject" id="subject" value={formvalue.subject}
+                      onChange={changevalue} className="subject shadow-sm" placeholder="Subject:"/>
+              <input type="text" name="phone" id="phone"  value={formvalue.phone}
+                      onChange={changevalue} className="phone shadow-sm" placeholder="Phone:"/>
             </div>
 
-            <div class="message-wrap">
-              <textarea name="message"   id="comment-message" rows="7"   class="shadow-sm" placeholder="Message" required="required"></textarea>
+            <div className="message-wrap">
+              <textarea name="textbox"   value={formvalue.textbox}
+                      onChange={changevalue}  id="comment-message" rows="7"   className="shadow-sm px-2 py-2" placeholder="Message" required="required"></textarea>
         
           </div>
-          <div class="fl-btn btn-linear linear-color-one mb-3">
-            <button name="submit" type="submit" class="submit btn-contact hv-linear border-corner" id="submit">contact today</button>
+          <div className="fl-btn btn-linear linear-color-one mb-3">
+            <button name="submit" type="submit" className="submit btn-contact hv-linear border-corner" id="submit">contact today</button>
         </div>
          
           </form>

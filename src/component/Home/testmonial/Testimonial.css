@@ -149,9 +149,9 @@
 }
 
 .testimonial-quote .media-body{
-  position: absolute;
+  /* position: absolute;
   left:11rem;
-  top:3.3rem;
+  top:3.3rem; */
 }
 .client-say{
   position: relative;

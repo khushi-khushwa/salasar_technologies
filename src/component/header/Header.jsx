@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 // import logo from './assets/images/logo/salasar-logo.png';
 import logo from '../../assets/images/logo/salasar-logo.png'
 import './Header.css'
@@ -74,11 +74,25 @@ export const Header = () => {
                   
                   {/* Start Other Option */}
                   <div className="others-option d-flex justify-content-center align-items-center header-icon p-3">
-                    <NavLink className="default-btn text-decoration-none" to="#">
+                    <div className="default-btn text-decoration-none" to="#">
+                      
                       <i className="fa-brands fa-square-facebook"></i>
-                      <i className="fa-brands fa-twitter"></i>
-                      <i className="fa-brands fa-instagram"></i>
-                    </NavLink>
+                                          <a 
+  href="https://www.linkedin.com/in/salasar-technologies-7555ba37a/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+   <i className="fa-brands fa-linkedin"></i>
+</a>
+                    
+                      <a 
+  href="https://www.instagram.com/salasartechnologies/" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+    <i className="fa-brands fa-instagram"></i>
+</a>
+                    </div>
                   </div>
                   {/* End Other Option */}
                 </div>
